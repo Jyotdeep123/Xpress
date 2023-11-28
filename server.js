@@ -71,7 +71,7 @@ app.post('/login', async (req, res) => {
     } catch(error) {
         res.status(500).send({ error: 'internal server error'})
     }
-}) ;
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT,() => {
